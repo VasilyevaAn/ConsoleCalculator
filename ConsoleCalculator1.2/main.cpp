@@ -15,7 +15,7 @@ bool is_unary_minus(char c){
 }
 
 int priority(char op) {
-    switch (op) { // при + или - возврат 1, при * / % 2 иначе -1
+    switch (op) { 
         case '+':
         case '-':
             return 1;
@@ -85,7 +85,7 @@ double calculate (string & s) {
 				if (isdigit (operand[0]))
 					num.push_back (atof (operand.c_str()));
 				else
-					cout<<"некорректный ввод, строка содержит недопустимое выражение "<<operand;
+					cout<<"incorrectly input "<<operand;
 					unary = false;
 			}
 	while (!op.empty()){
